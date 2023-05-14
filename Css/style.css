@@ -32,6 +32,22 @@ body
 {
    background: tomato;
 }
+
+.btn
+{
+   border: .2rem solid var(--black);
+   margin-top: 1rem ;
+   display:inline-block;
+   padding: .8rem 3rem;
+   font-size: 1.7rem;
+   border-radius: .5rem;
+   color:var(--black);
+}
+.btn:hover
+{
+   background:var(--green);
+   color:white;
+}
 .header
 {
    border: 2px solid;
@@ -142,13 +158,19 @@ body
 {
    border: 0;
    position : absolute;
-   top: 100%;
-   right : 2rem;
+   top: 110%;
+   right : -110%;
    padding : 1rem;
    border-radius: .5rem;
    box-shadow: var(--box-shadow);
-   width: 30rem;
+   width: 35rem;
    background: white;
+}
+
+.header .shopping-cart.active 
+{
+   right: 2rem;
+   transition: .4s linear;
 }
 
 .header .shopping-cart .box
@@ -164,8 +186,8 @@ body
 
 .header .shopping-cart .box img
 {
-   height: 8rem;
-   width: 8rem;
+   height: 7rem;
+   width: 7rem;
 }
 
 .header .shopping-cart .box .fa-trash
@@ -182,4 +204,39 @@ body
 .header .shopping-cart .box .fa-trash:hover
 {
    color:var(--green);
+}
+
+.header .shopping-cart .box .content h3
+{
+   color:var(--black);
+   font-size: 1.7rem;
+   padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span
+{
+   color:var(--light-color);
+   font-size: 1.3rem;
+ 
+}
+.header .shopping-cart .box .content .quantity
+{
+  padding-left: 1rem;
+
+}
+
+.header .shopping-cart .total 
+{
+   font-size: 2rem;
+   padding : 1rem;
+   text-align: center;
+   color:var(--black);
+
+}
+
+.header .shopping-cart .btn
+{
+   display:block;
+   text-align: center;
+   margin: 1rem 0;
 }
