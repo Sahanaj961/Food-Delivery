@@ -32,7 +32,54 @@ body
 {
    background: tomato;
 }
+.header .login-form
+{
+   border:0 solid black;
+   position :absolute;
+   top:110%;
+   width: 35rem;
+   right:-110%;
+   box-shadow:var(--box-shadow);
+   padding:2rem;
+   border-radius:.5rem;
+   background-color: #fff;
+   text-align:center;
+}
+.header .login-form.active{
+   right: 2rem;
+   transition: .4s linear;
+   
+}
+.header .login-form p{
+   font-size: 1.4rem;
+   padding:.5rem 0;
+   color:var(--black)
+}
+.header .login-form p a
+{
+  
+   color:var(--green);
+   text-decoration:underline;
+}
+.header .login-form .h3
+{
+   font-size:2.5rem;
+   text-transform: uppercase;
+   color:var(--black);
+}
+.header .login-form .box
+{
+   width: 100%;
+   border:1px solid;
+   margin:.7rem 0;
+   background:#eee;
+   border-radius: .5rem;
+   padding: 1rem;
+   font-size: 1.6rem;
+   color:var(--black);
+   text-transform: none;
 
+}
 
 
 .btn
@@ -150,6 +197,24 @@ body
    color : var(--black);
    padding : 0 1.5rem;
 }
+.header .search-form p 
+{
+  
+   font-size: 1.4rem;
+ padding : 0 1.5rem;
+ color:var(--light-color)
+
+}
+.css-jgrj0x {
+   min-width: 95px;
+}
+
+
+.header .search-form p a
+{
+   color:var(--green);
+}
+
 .header .search-form label
 {
    font-size: 2.2rem;
@@ -249,39 +314,7 @@ body
    margin: 1rem 0;
 }
 
-/*login Portion*/
-.header .login-form
-{
-   border:1px solid red;
-   position :absolute;
-   top:110%;
-   width: 30rem;
-   right:2rem;
-   box-shadow:var(--box-shadow);
-   padding:2rem;
-   border-radius:.5rem;
-   background-color: #fff;
-   text-align:center;
-}
-.header .login-form .h3
-{
-   font-size:2.5rem;
-   text-transform: uppercase;
-   color:var(--black);
-}
-.header .login-form .box
-{
-   width: 100%;
-   border:1px solid;
-   margin:.7rem 0;
-   background:#eee;
-   border-radius: .5rem;
-   padding: 1rem;
-   font-size: 1.6rem;
-   color:var(--black);
-   text-transform: none;
 
-}
 
 
 
@@ -305,10 +338,6 @@ body
    #menu-btn
   {
      display: inline-block;
-  }
-  .header .search-form
-  {
-     width:90%;
   }
    .header .navbar
    {
