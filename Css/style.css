@@ -110,6 +110,11 @@ body
 {
   display: none;
 }
+.header .navbar.active
+{
+   right: 2rem;
+   transition: .4s linear;
+}
 
 .header .search-form
 {
@@ -239,4 +244,58 @@ body
    display:block;
    text-align: center;
    margin: 1rem 0;
+}
+
+
+
+
+
+/*media queries*/
+@media (max-width: 991px)
+{
+   html
+   {
+     font-size: 55%;
+    
+   }
+   .header
+   {
+      padding: 2rem;
+   }
+
+}
+
+@media (max-width: 768px)
+{
+   #menu-btn
+  {
+     display: inline-block;
+  }
+   .header .navbar
+   {
+      position: absolute;
+      top:110%;
+      right: -110%;
+      width:30rem;
+      box-shadow: var(--box-shadow);
+      border-radius: .5rem;
+      background: #fff;
+
+   }
+   .header .navbar a
+   {
+      font-size: 1.7rem;
+      margin:1.7rem 2rem;
+      display: block;
+   }
+}
+
+@media (max-width: 450px)
+{
+   html
+   {
+     font-size: 30%;
+    
+   }
+
 }
