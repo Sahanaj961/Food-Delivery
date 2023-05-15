@@ -6,6 +6,7 @@ let searchForm = document.querySelector('.search-form');
    
     shoppingCart.classList.remove('active');
     navbar.classList.remove('active');
+    loginForm.classList.remove('active');
  }
 
  let shoppingCart= document.querySelector('.shopping-cart');
@@ -16,6 +17,7 @@ let searchForm = document.querySelector('.search-form');
 
    searchForm.classList.remove('active');
    navbar.classList.remove('active');
+   loginForm.classList.remove('active');
  }
 
 
@@ -27,15 +29,9 @@ let searchForm = document.querySelector('.search-form');
 
    searchForm.classList.remove('active');
    shoppingCart.classList.remove('active');
+   loginForm.classList.remove('active');
 
    
- }
-
- window.onscroll = () =>
- {
-   searchForm.classList.remove('active');
-   shoppingCart.classList.remove('active');
-   navbar.classList.remove('active');
  }
 
  let loginForm= document.querySelector('.login-form');
@@ -43,6 +39,10 @@ let searchForm = document.querySelector('.search-form');
  document.querySelector('#login-btn').onclick = () =>
  {
   loginForm.classList.toggle('active');
+
+   searchForm.classList.remove('active');
+   shoppingCart.classList.remove('active');
+   navbar.classList.remove('active');
 
   
  }
@@ -70,5 +70,15 @@ let searchForm = document.querySelector('.search-form');
     },
   },
 });
+
+
+ window.onscroll = () =>
+ {
+   searchForm.classList.remove('active');
+   shoppingCart.classList.remove('active');
+   navbar.classList.remove('active');
+   loginForm.classList.remove('active');
+ }
+
 
 
