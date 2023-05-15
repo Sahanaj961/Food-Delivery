@@ -7,8 +7,8 @@
    --light-color: #666;
    
    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0,.1);
-   --border: .2rem solid rgba(0,0,0.1);
-   --outline: 1rem solid rgba(0,0,0.1);
+   --border: .2rem solid rgb(17, 16, 16);
+   --outline: 1rem solid rgb(195, 190, 190);
 }
 
 *{
@@ -335,6 +335,7 @@ section{
    padding:.5rem 3rem;
    clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
 }
+/*end header*/
 
 .home{
    border:0px solid;
@@ -409,12 +410,12 @@ section{
    margin-bottom: 2rem;
 }
 .products .product-slider .box{
-   border: 0px solid red;
+   border: 0;
    background: #fff;
-   border-radius: .5rem;
+   border-radius: .2rem;
    text-align: center;
    padding:3rem  2rem ;
-   outline-offset: -1rem;
+   outline-offset: -1.5rem;
    outline: var(--outline);
    box-shadow: var(--box-shadow);
    transition: .2s linear;
@@ -432,7 +433,7 @@ section{
 }
 .products .product-slider .box .price{
    font-size: 2rem;
-   color:var(--black);
+   color:var(--border);
    padding:.5rem 0;
 }
 .products .product-slider .box .stars i {
@@ -453,7 +454,7 @@ section{
    border-radius: .5rem;
    box-shadow: var(--box-shadow);
    outline: var(--outline);
-   outline-offset: -1rem;
+   outline-offset: -1.5rem;
    text-align: center;
 }
 .categories .box-container .box:hover{
@@ -530,6 +531,7 @@ section{
    font-size: 1.5rem;
    padding:.5rem;
 }
+
 /*--review-->*/
 .review .review-slider
 {
@@ -583,6 +585,108 @@ padding:1rem;
 
 }
 /*--review*/
+
+
+
+
+/*Footer css*/
+
+.footer
+{
+   background: #fff;
+}
+
+.footer .box-container
+{
+   border: 0px solid;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(26rem,1fr));
+   gap:1.5rem;
+}
+
+.footer .box-container .box h3
+{
+   font-size: 2rem;
+   color: var(--black);
+   padding: 1rem 0rem;
+}
+
+.footer .box-container .box h3 i
+{
+   color:  var(--green);
+}
+
+.footer .box-container .box .links
+{
+  display:block;
+  font-size: 1.3rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links:hover i
+{
+   padding-right: 2rem;
+}
+
+
+.footer .box-container .box .links i
+{
+   color: var(--green);
+   padding-right: .5rem;
+
+}
+
+
+.footer .box-container .box p 
+{
+   line-height: 1.8;
+   font-size: 1.5rem;
+   color:var(--light-color);
+   padding: 1rem 0;
+   
+}
+
+.footer .box-container .box .share a
+{
+   border: 0px solid;
+   height: 4rem;
+   width: 4rem;
+   line-height: 4rem;
+   border-radius: .5rem;
+   font-size: 2rem;
+   color: var(--black);
+   margin-left: .2rem;
+   background:#eee;
+   text-align: center;
+}
+
+.footer .box-container .box .share a:hover
+{
+   color: white;
+   background: var(--green);
+}
+
+.footer .box-container .box .email
+{
+   width: 100%;
+   margin: .7rem 0;
+   padding: 1rem;
+   border-radius: .5rem ;
+   background: #eee;
+   font-size:1.6rem;
+   color:var(--black);
+   text-transform: none;
+}
+
+
+
+
+
+
+
+
+
 /*media queries*/
 @media (max-width: 991px)
 {
