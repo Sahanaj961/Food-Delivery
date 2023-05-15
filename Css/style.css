@@ -432,7 +432,7 @@ section{
 }
 .products .product-slider .box .price{
    font-size: 2rem;
-   color:var(--black);
+   color:var(--border);
    padding:.5rem 0;
 }
 .products .product-slider .box .stars i {
@@ -530,6 +530,34 @@ section{
    font-size: 1.5rem;
    padding:.5rem;
 }
+
+
+
+/*Footer css*/
+
+.footer
+{
+   background: #fff;
+}
+
+.footer .box-container
+{
+   border: 0px solid;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(26rem,1fr));
+   gap:1.5rem;
+}
+
+.footer .box-container .box h3
+{
+   font-size: 2rem;
+   color: var(--black);
+   padding: 1rem 0rem;
+}
+
+
+
+
 /*media queries*/
 @media (max-width: 991px)
 {
